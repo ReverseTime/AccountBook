@@ -22,10 +22,10 @@ public class outArcChartActivity extends Activity {
     private MySQLiteOpenHelper dbHelper;
     private String dateBeginString;
     private String dateEndString;
-    private int eatSum=0;
-    private int wearSum=0;
-    private int liveSum=0;
-    private int trafficSum=0;
+    private int eatSum = 0;
+    private int wearSum = 0;
+    private int liveSum = 0;
+    private int trafficSum = 0;
     private outArcChartView arcChartView_arc_outarcChartView;
     //吃
     private List<Map<String, Object>> eatList;
@@ -97,38 +97,38 @@ public class outArcChartActivity extends Activity {
                 break;
             case R.id.button_arc_search:
 
-               eatList = dbHelper.selectList(
+                eatList = dbHelper.selectList(
                         "select money from tb_myAccount where bigKind= ?",
-                        new String []{"吃"});
+                        new String[]{"吃"});
 
                 for (int i = 0; i < eatList.size(); i++) {
                     int s = Integer.parseInt(eatList.get(i).get("money").toString());
-                    eatSum+=s;
+                    eatSum += s;
                 }
                 wearList = dbHelper.selectList(
                         "select money from tb_myAccount  where bigKind= ?",
-                        new String []{"穿"});
+                        new String[]{"穿"});
                 for (int i = 0; i < wearList.size(); i++) {
                     int s = Integer.parseInt(wearList.get(i).get("money").toString());
-                    wearSum+=s;
+                    wearSum += s;
                 }
                 liveList = dbHelper.selectList(
                         "select money from tb_myAccount  where bigKind= ?",
-                        new String []{"住"});
+                        new String[]{"住"});
                 for (int i = 0; i < liveList.size(); i++) {
                     int s = Integer.parseInt(liveList.get(i).get("money").toString());
-                    liveSum+=s;
+                    liveSum += s;
                 }
-               trafficList = dbHelper.selectList(
+                trafficList = dbHelper.selectList(
                         "select money from tb_myAccount  where bigKind= ?",
-                        new String []{"行"});
+                        new String[]{"行"});
                 for (int i = 0; i < trafficList.size(); i++) {
                     int s = Integer.parseInt(trafficList.get(i).get("money").toString());
-                    trafficSum+=s;
+                    trafficSum += s;
                 }
 
                 arcChartView_arc_outarcChartView.setData(new int[]
-                                {eatSum,wearSum,liveSum,trafficSum}
+                                {eatSum, wearSum, liveSum, trafficSum}
                 );
                 break;
         }

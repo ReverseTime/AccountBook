@@ -4,11 +4,13 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             >
+
         <TextView
                 android:id="@+id/text_arc_incomeBegin"
                 android:layout_width="wrap_content"
@@ -16,12 +18,14 @@
                 android:textSize="20sp"
                 android:text="起始时间"
                 />
+
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:text=" ~ "
                 />
+
         <TextView
                 android:id="@+id/text_arc_incomeEnd"
                 android:layout_width="wrap_content"
@@ -31,22 +35,25 @@
                 />
 
     </LinearLayout>
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             >
-    <TextView
-            android:id="@+id/textButton_arc_incomBegin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="income_clickButton"
-            android:clickable="true"
-            android:gravity="center_horizontal"
-            android:textSize="30sp"
-            android:text="起始时间"
-            />
+
+        <TextView
+                android:id="@+id/textButton_arc_incomBegin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="income_clickButton"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:text="起始时间"
+                />
+
         <TextView
                 android:id="@+id/textButton_arc_incomEnd"
                 android:layout_width="0dp"
@@ -60,42 +67,46 @@
                 />
 
 
-
     </LinearLayout>
-        <Button
-                android:id="@+id/button_arc_search"
-                android:layout_width="match_parent"
+
+    <Button
+            android:id="@+id/button_arc_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="income_clickButton"
+            android:text="查询"
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="income_clickButton"
-                android:text="查询"
+                android:textSize="30sp"
+                android:textColor="#F00"
+                android:text="工资"
                 />
-        <LinearLayout
-                android:layout_width="match_parent"
+
+        <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                >
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="30sp"
-                        android:textColor="#F00"
-                        android:text="工资"
-                        />
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="30sp"
-                        android:textColor="#00F"
-                        android:layout_marginLeft="30dp"
-                        android:text="外快"
-                        />
-        </LinearLayout>
-<com.Michael.ArcChartView
-        android:id="@+id/arcChartView_arc_arcChartView"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+                android:textSize="30sp"
+                android:textColor="#00F"
+                android:layout_marginLeft="30dp"
+                android:text="外快"
+                />
+    </LinearLayout>
+
+    <com.Michael.ArcChartView
+            android:id="@+id/arcChartView_arc_arcChartView"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
 
 </LinearLayout>

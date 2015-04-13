@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     //收入、支出的数组
     private String[] arr;
     //支出数组
-   // private String[] arr;
+    // private String[] arr;
 
     //
     private Spinner spinner;
@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
 
     private String[] arrBig;
     private String[][] arrSmail;
+
     /**
      * Called when the activity is first created.
      */
@@ -71,10 +72,11 @@ public class MainActivity extends Activity {
 
 
         //收入类型
-        arr = new String[]{"工资","外快"};
+        arr = new String[]{"工资", "外快"};
         changeSpinner();
     }
-    public void changeSpinner(){
+
+    public void changeSpinner() {
         spinner = (Spinner) findViewById(R.id.spinner1);
         final ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, android.R.id.text1, arr);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -92,6 +94,7 @@ public class MainActivity extends Activity {
             }
         });
     }
+
     public void clickButton(View view) {
         switch (view.getId()) {
             //选择日期
@@ -144,14 +147,14 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void changeSpinner(View view){
-        switch (view.getId()){
+    public void changeSpinner(View view) {
+        switch (view.getId()) {
             case R.id.radioButton_main_expend:
-                arr = new String[]{"吃","穿","住","行"};
+                arr = new String[]{"吃", "穿", "住", "行"};
                 changeSpinner();
                 break;
             case R.id.radioButton_main_income:
-                arr = new String[]{"工资","外快"};
+                arr = new String[]{"工资", "外快"};
                 changeSpinner();
                 break;
         }
@@ -167,22 +170,22 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main,menu);
+        getMenuInflater().inflate(R.menu.main, menu);
 
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_intent_circleChartActivity:
                 Intent intent = new Intent();
-                intent.setClass(this,ArcChartActivity.class);
+                intent.setClass(this, ArcChartActivity.class);
                 startActivity(intent);
                 break;
             case R.id.action_intent_outcircleChartActivity:
                 Intent intent1 = new Intent();
-                intent1.setClass(this,outArcChartActivity.class);
+                intent1.setClass(this, outArcChartActivity.class);
                 startActivity(intent1);
                 break;
         }

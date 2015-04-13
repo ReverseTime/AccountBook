@@ -10,7 +10,6 @@ import android.view.View;
  * Created with IntelliJ IDEA
  * Created by MaDianYong
  * Date: 2015/4/10
- *
  */
 
 
@@ -51,9 +50,9 @@ public class ArcChartView extends View {
 
     }
 
-    public void setData(int[] data){
+    public void setData(int[] data) {
         this.data = data;
-        if(data!=null){
+        if (data != null) {
             postInvalidate();
         }
     }
@@ -62,33 +61,28 @@ public class ArcChartView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-      //  Log.i("dfd","---------------------------------------->"+data.length);
-       //float gongzi =  data[0]/(data[0]+data[1])*360;
-
-
-
-        //画绿色的半圆
+        //画半圆
         arcPaint.setColor(Color.BLACK);
         canvas.drawArc(arcRect, 0, 360, true, arcPaint);
 
         //画蓝色的半圆
-      //  arcPaint.setColor(Color.parseColor("#FF0E6AB8"));
-     //   canvas.drawArc(arcRect, gongzi, 360-gongzi, true, arcPaint);
+        //  arcPaint.setColor(Color.parseColor("#FF0E6AB8"));
+        //   canvas.drawArc(arcRect, gongzi, 360-gongzi, true, arcPaint);
 
 
         arcPaint.setColor(Color.BLACK);
         canvas.drawCircle(250, 250, 70, arcPaint);
 
-        if(data!=null){
+        if (data != null) {
 
             float a = data[0];
             float b = data[1];
 
             arcPaint.setColor(Color.RED);
-            canvas.drawArc(arcRect, 0, a/(a+b)*360, true, arcPaint);
+            canvas.drawArc(arcRect, 0, a / (a + b) * 360, true, arcPaint);
 
             arcPaint.setColor(Color.BLUE);
-            canvas.drawArc(arcRect, a/(a+b)*360, 360-(a/(a+b)*360), true, arcPaint);
+            canvas.drawArc(arcRect, a / (a + b) * 360, 360 - (a / (a + b) * 360), true, arcPaint);
         }
     }
 }

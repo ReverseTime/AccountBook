@@ -2,11 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_intent_circleChartActivity"
-        android:showAsAction="always"
-        android:title="收入饼图"/>
+            android:id="@+id/action_intent_circleChartActivity"
+            android:showAsAction="always"
+            android:title="收入饼图"
+            />
     <item
             android:id="@+id/action_intent_outcircleChartActivity"
             android:showAsAction="always"
-            android:title="支出饼图"/>
+            android:title="支出饼图"
+            />
 </menu>

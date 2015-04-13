@@ -10,7 +10,6 @@ import android.view.View;
  * Created with IntelliJ IDEA
  * Created by MaDianYong
  * Date: 2015/4/10
- *
  */
 
 
@@ -51,9 +50,9 @@ public class outArcChartView extends View {
 
     }
 
-    public void setData(int[] data){
+    public void setData(int[] data) {
         this.data = data;
-        if(data!=null){
+        if (data != null) {
             postInvalidate();
         }
     }
@@ -66,7 +65,7 @@ public class outArcChartView extends View {
         arcPaint.setColor(Color.DKGRAY);
         canvas.drawArc(arcRect, 0, 360, true, arcPaint);
 
-        if(data!=null){
+        if (data != null) {
 
             float a = data[0];
             float b = data[1];
@@ -74,16 +73,16 @@ public class outArcChartView extends View {
             float d = data[3];
 
             arcPaint.setColor(Color.RED);
-            canvas.drawArc(arcRect, 0, a/(a+b+c+d)*360, true, arcPaint);
+            canvas.drawArc(arcRect, 0, a / (a + b + c + d) * 360, true, arcPaint);
 
             arcPaint.setColor(Color.BLUE);
-            canvas.drawArc(arcRect, a/(a+b+c+d)*360, b/(a+b+c+d)*360, true, arcPaint);
+            canvas.drawArc(arcRect, a / (a + b + c + d) * 360, b / (a + b + c + d) * 360, true, arcPaint);
 
             arcPaint.setColor(Color.GREEN);
-            canvas.drawArc(arcRect, (a+b)/(a+b+c+d)*360, c/(a+b+c+d)*360, true, arcPaint);
+            canvas.drawArc(arcRect, (a + b) / (a + b + c + d) * 360, c / (a + b + c + d) * 360, true, arcPaint);
 
             arcPaint.setColor(Color.parseColor("#fffdff6e"));
-            canvas.drawArc(arcRect, (a+b+c)/(a+b+c+d)*360, d/(a+b+c+d)*360, true, arcPaint);
+            canvas.drawArc(arcRect, (a + b + c) / (a + b + c + d) * 360, d / (a + b + c + d) * 360, true, arcPaint);
 
 
             arcPaint.setColor(Color.BLACK);

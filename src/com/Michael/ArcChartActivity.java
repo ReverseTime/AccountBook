@@ -21,8 +21,8 @@ public class ArcChartActivity extends Activity {
     private MySQLiteOpenHelper dbHelper;
     private String dateBeginString;
     private String dateEndString;
-    private int salarySum=0;
-    private int perkSum=0;
+    private int salarySum = 0;
+    private int perkSum = 0;
     private ArcChartView arcChartView_arc_arcChartView;
     //工资集合
     private List<Map<String, Object>> salaryList;
@@ -42,7 +42,6 @@ public class ArcChartActivity extends Activity {
         dbHelper = new MySQLiteOpenHelper(this);
         salaryList = new ArrayList<Map<String, Object>>();
         perkList = new ArrayList<Map<String, Object>>();
-
 
     }
 
@@ -88,27 +87,26 @@ public class ArcChartActivity extends Activity {
                 break;
             case R.id.button_arc_search:
 
-               salaryList = dbHelper.selectList(
+                salaryList = dbHelper.selectList(
                         "select money from tb_myAccount where bigKind= ?",
-                        new String []{"工资"});
+                        new String[]{"工资"});
 
                 for (int i = 0; i < salaryList.size(); i++) {
                     int s = Integer.parseInt(salaryList.get(i).get("money").toString());
-                    salarySum+=s;
+                    salarySum += s;
                 }
-                 perkList = dbHelper.selectList(
+                perkList = dbHelper.selectList(
                         "select money from tb_myAccount  where bigKind= ?",
-                        new String []{"外快"});
+                        new String[]{"外快"});
                 for (int i = 0; i < perkList.size(); i++) {
                     int s = Integer.parseInt(perkList.get(i).get("money").toString());
-                    perkSum+=s;
+                    perkSum += s;
                 }
 
                 arcChartView_arc_arcChartView.setData(new int[]
-                                {salarySum,perkSum}
+                                {salarySum, perkSum}
                 );
                 break;
         }
-
     }
 }

@@ -5,44 +5,44 @@
               android:layout_height="50dp"
         >
 
-            <TextView
-                    android:id="@+id/textView_item_state"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    />
+    <TextView
+            android:id="@+id/textView_item_state"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
 
-            <TextView
-                    android:id="@+id/textView_item_money"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    />
+    <TextView
+            android:id="@+id/textView_item_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
 
-            <TextView
-                    android:id="@+id/textView_item_bigKind"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    />
+    <TextView
+            android:id="@+id/textView_item_bigKind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
 
-            <TextView
-                    android:id="@+id/textView_item_smallKind"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    />
+    <TextView
+            android:id="@+id/textView_item_smallKind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
 
-            <TextView
-                    android:id="@+id/textView_item_date"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textSize="10sp"
-                    />
+    <TextView
+            android:id="@+id/textView_item_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            />
 
 </LinearLayout>
