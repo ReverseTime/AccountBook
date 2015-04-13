@@ -22,21 +22,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb21ade7-77db-4aff-a026-38bba2dc1e83" name="Default" comment="">
-      <change type="DELETED" beforePath="F:\QF\AndroidProjects\AccountBook\res\layout\fragment_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\QF\AndroidProjects\AccountBook\res\layout\layout_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\QF\AndroidProjects\AccountBook\src\com\Michael\CircleChartActivity.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/ArcChartActivity.java" afterPath="$PROJECT_DIR$/src/com/Michael/ArcChartActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/ArcChartView.java" afterPath="$PROJECT_DIR$/src/com/Michael/ArcChartView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/Michael/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/MySQLiteDatabaseHelper.java" afterPath="$PROJECT_DIR$/src/com/Michael/MySQLiteDatabaseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/MySQLiteOpenHelper.java" afterPath="$PROJECT_DIR$/src/com/Michael/MySQLiteOpenHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_arcchartview.xml" afterPath="$PROJECT_DIR$/res/layout/layout_arcchartview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_listview_itme.xml" afterPath="$PROJECT_DIR$/res/layout/layout_listview_itme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_outarcchartview.xml" afterPath="$PROJECT_DIR$/res/layout/layout_outarcchartview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/main.xml" afterPath="$PROJECT_DIR$/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/outArcChartActivity.java" afterPath="$PROJECT_DIR$/src/com/Michael/outArcChartActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Michael/outArcChartView.java" afterPath="$PROJECT_DIR$/src/com/Michael/outArcChartView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AccountBook.iws" />
@@ -99,7 +84,7 @@
       <file leaf-file-name="ArcChartView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Michael/ArcChartView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.109375" vertical-offset="1630" max-vertical-offset="2430">
+            <state vertical-scroll-proportion="1.1269841" vertical-offset="1630" max-vertical-offset="2430">
               <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
               <folding>
                 <element signature="e#411#412#0" expanded="true" />
@@ -582,7 +567,7 @@
       <workItem from="1428804897490" duration="25864000" />
       <workItem from="1428844300137" duration="1998000" />
       <workItem from="1428851041265" duration="1715000" />
-      <workItem from="1428887988334" duration="454000" />
+      <workItem from="1428887988334" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1428847043676</created>
@@ -608,11 +593,17 @@
       <option name="project" value="LOCAL" />
       <updated>1428852152530</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="第二次提交">
+      <created>1428888482638</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1428888482638</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88808000" />
+    <option name="totallyTimeSpent" value="88869000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -638,9 +629,10 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.8412969" sideWeight="0.48033282" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.84273505" sideWeight="0.48033282" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10363086" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -665,7 +657,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45641026" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1167,7 +1158,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Michael/ArcChartView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.109375" vertical-offset="1630" max-vertical-offset="2430">
+        <state vertical-scroll-proportion="1.1269841" vertical-offset="1630" max-vertical-offset="2430">
           <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
           <folding>
             <element signature="e#411#412#0" expanded="true" />
