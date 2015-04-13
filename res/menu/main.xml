@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/action_intent_erweima"
+        android:showAsAction="always"
+        android:title="扫码专区"/>
+    <item
             android:id="@+id/action_intent_circleChartActivity"
             android:showAsAction="always"
             android:title="收入饼图"

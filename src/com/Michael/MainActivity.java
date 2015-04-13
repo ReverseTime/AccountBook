@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.*;
 import com.Michael.AccountBook.R;
 import com.lidroid.xutils.view.annotation.ViewInject;
+import ericssonlabs.BarCodeTestActivity;
 import org.w3c.dom.Text;
 
 import java.lang.reflect.Array;
@@ -34,7 +35,6 @@ public class MainActivity extends Activity {
     //支出数组
     // private String[] arr;
 
-    //
     private Spinner spinner;
     //第一个下拉框
     private String item1;
@@ -51,7 +51,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         init();
-
     }
 
     public void init() {
@@ -136,7 +135,7 @@ public class MainActivity extends Activity {
                 if (TextUtils.isEmpty(money) || date.equals("选择日期")) {
                     Toast.makeText(this, "请检查金额和日期是否填写正确！", Toast.LENGTH_SHORT).show();
                 } else {
-                    String insertSql = "insert into tb_myAccount (state,money,bigKind,smallKind,date) values(?,?,?,?,?)";
+                    String insertSql = "insert into tb_myAccount (state,money,bigKind,smallKind,date,year,) values(?,?,?,?,?)";
 
                     boolean flag = dbHelper.execData(insertSql,
                             new String[]{state, money, item1, null, date});
@@ -187,6 +186,11 @@ public class MainActivity extends Activity {
                 Intent intent1 = new Intent();
                 intent1.setClass(this, outArcChartActivity.class);
                 startActivity(intent1);
+                break;
+            case R.id.action_intent_erweima:
+                Intent intent2 = new Intent();
+                intent2.setClass(this, BarCodeTestActivity.class);
+                startActivity(intent2);
                 break;
         }
         return super.onOptionsItemSelected(item);

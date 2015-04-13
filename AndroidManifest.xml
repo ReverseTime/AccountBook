@@ -6,6 +6,10 @@
         >
 
     <uses-sdk android:minSdkVersion="16"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
     <application
             android:label="@string/app_name"
             android:icon="@drawable/ic_launcher"
@@ -22,5 +26,14 @@
         <activity android:name="com.Michael.CircleChartActivity"/>
         <activity android:name="com.Michael.ArcChartActivity"/>
         <activity android:name="com.Michael.outArcChartActivity"/>
+        <activity android:name="ericssonlabs.BarCodeTestActivity"/>
+        <!-- ZXing 二维码扫描的入口点 -->
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:name="zxing.activity.CaptureActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
     </application>
 </manifest>
